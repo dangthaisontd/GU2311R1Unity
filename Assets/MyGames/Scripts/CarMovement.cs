@@ -41,6 +41,8 @@ public class CarMovement : MonoBehaviour
         {
             float h = horizontalSpeed * Input.GetAxis("Horizontal")*Time.deltaTime;
             float v = verticalSpeed * Input.GetAxis("Vertical")* Time.deltaTime;
+            transform.Translate(0, 0, v);
+            transform.Rotate(0, h, 0);
         }
     }
 }
