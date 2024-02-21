@@ -522,15 +522,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59a0265770a52b642b945862c78b4874, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.54939
+      value: -11.1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59a0265770a52b642b945862c78b4874, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59a0265770a52b642b945862c78b4874, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.025387
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59a0265770a52b642b945862c78b4874, type: 3}
       propertyPath: m_LocalRotation.w
@@ -567,25 +567,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 59a0265770a52b642b945862c78b4874, type: 3}
   m_PrefabInstance: {fileID: 280872745}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &280872749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280872746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a477ef913b4ee7940b91f39288975228, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  points:
-  - {fileID: 121103928}
-  - {fileID: 1993308249}
-  - {fileID: 499124354}
-  - {fileID: 1165851442}
-  mode: 1
 --- !u!4 &280872750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 59a0265770a52b642b945862c78b4874, type: 3}
@@ -607,6 +588,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &280872752
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280872746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2504692, y: 3.1508822, z: 4.2935386}
+  m_Center: {x: 0.0063648224, y: 1.5590711, z: -0.012925386}
+--- !u!114 &280872753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280872746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2010d1ab5e6fa734e8590f179417882b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedPosition: 20
+  speedRotation: 50
 --- !u!1001 &309565988
 PrefabInstance:
   m_ObjectHideFlags: 0
